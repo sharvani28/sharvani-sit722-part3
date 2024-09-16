@@ -56,9 +56,9 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - protocol: TCP
-      port: 4000
-      targetPort: 8000
+  - protocol: TCP
+    port: 8000
+    targetPort: 8000
 
   selector:
     app: book-catalog
@@ -70,8 +70,8 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - protocol: TCP
-      port: 4001
-      targetPort: 8001
+  - protocol: TCP
+    port: 8001
+    targetPort: 8001
   selector:
     app: inventory-management
